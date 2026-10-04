@@ -1,0 +1,17 @@
+body{
+    background-color: #1E2A37;
+}
+.navResz, footer{
+    background-color: #343C67;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav a, nav li{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    color: #ccc;
+}

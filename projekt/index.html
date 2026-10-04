@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,46 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bejelentkezes.css">
 </head>
+
 <body class="p-5">
-    <header>
+    <header class="mb-5">
         <h1 class="text-center text-white">Üdvözöljük a Filmezz weboldalán!</h1>
     </header>
     <main>
-        <div class="container">
-            <form>
+        <div class="container w-50">
+            <form class="bejelentkezes mt-5 px-5 pt-5 pb-2">
+                <h2 class="text-center mb-5">Bejelentkezés</h2>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Felhasználónév</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-5">
+                    <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Jelszó</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-4 text-center">
+                    <button type="button" class="btn btn-info text-white fs-5 mb-2" onclick="valtas()">Még nincs fiókom</button>
+                    <button type="button" class="btn btn-primary mb-2 fs-5">Bejelentkezés</button>
+                </div>
+            </form>
 
+            <form class="fiokLetrehozas mt-5 px-5 pt-5 pb-2 d-none">
+                <h2 class="text-center mb-5">Fiók létrehozása</h2>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Felhasználónév</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Jelszó</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-5">
+                    <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Jelszó megerősítése</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-4 text-center">
+                    <button type="button" class="btn btn-primary fs-5" onclick="visszavaltas()">Fiók létrehozása</button>
+                </div>
             </form>
         </div>
     </main>
@@ -25,4 +58,5 @@
     <script src="js/Profile.js"></script>
     <script src="js/bejelentkezes.js"></script>
 </body>
+
 </html>
