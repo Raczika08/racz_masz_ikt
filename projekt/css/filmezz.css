@@ -1,17 +1,30 @@
 body{
     background-color: #1E2A37;
 }
-.navResz, footer{
+.navResz, footer, .card{
     background-color: #343C67;
 }
 nav li{
-    list-style-type: none;
     display: inline-block;
 }
-nav a, nav li{
+nav li, footer li{
+    list-style-type: none;
+}
+nav a, nav li, footer a{
     text-decoration: none;
     color: #fff;
 }
-nav a:hover{
+nav a:hover, footer a:hover{
     color: #ccc;
+}
+.card{
+    border-color: #343C67;
+}
+.zoom-in {
+    cursor: zoom-in;
+    background: linear-gradient(145deg, #2a2a2a, #383838);
+    border: 2px solid #343C67;
+}
+.zoom-in:hover {
+    transform: scale(1.02);
 }
