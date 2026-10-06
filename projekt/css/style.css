@@ -1,17 +1,13 @@
 body{
-    background-color: #1E2A37;
-}
-.navResz, footer{
-    background-color: #343C67;
-}
-nav li{
-    list-style-type: none;
-    display: inline-block;
-}
-nav a, nav li{
-    text-decoration: none;
+    background-color: #1e2a37;
     color: #fff;
 }
-nav a:hover{
-    color: #ccc;
+form{
+    background-color: rgba(239, 239, 239, 0.4);
+    border-radius: 20px;
+}
+@media (max-width: 1000px){
+    .container{
+        width: 100% !important;
+    }
 }
