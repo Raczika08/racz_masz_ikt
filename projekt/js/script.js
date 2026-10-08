@@ -7,6 +7,7 @@ function valtas() {
     if (voltProba) {
         document.querySelector(".bejelentkezes").classList.remove("rosszulMegadott")
         document.querySelector(".bejelentkezes .rosszAdatok").innerHTML = ""
+        document.querySelector(".bejelentkezes .rosszAdatok").classList.remove("bg-danger")
     }
 }
 
