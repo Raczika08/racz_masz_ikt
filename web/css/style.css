@@ -1,0 +1,33 @@
+body{
+    background-color: #1e2a37;
+}
+form{
+    background-color: rgba(239, 239, 239, 0.4);
+    border-radius: 20px;
+}
+footer a, body{
+    color: #fff;
+}
+footer{
+    background-color: #343C67;
+}
+footer li{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ccc;
+}
+.rosszulMegadott{
+    border: 2px solid #ff0000;
+}
+@media (max-width: 1000px){
+    .container{
+        width: 100% !important;
+    }
+    footer ul{
+        padding: 0px;
+    }
+}

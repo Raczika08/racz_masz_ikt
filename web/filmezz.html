@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmezz</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/filmezz.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-custom text-white py-3">
+            <div class="container-fluid align-items-center">
+                <div class="d-flex align-items-center brand-container">
+                    <i class="bi bi-camera-reels-fill ps-2 ps-lg-4 pe-2 fs-1 logo"></i>
+                    <a href="filmezz.html" class="fs-1 pe-3">Filmezz</a>
+                </div>
+                <div class="d-flex align-items-center profile-container">
+                    <div class="d-flex align-items-center me-3">
+                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span class="neve ps-2"></span></a>
+                    </div>
+                    <button class="navbar-toggler text-white border-0 fs-1 p-0 shadow-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                        aria-expanded="false" aria-label="Menü megnyitása">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse w-100" id="mainNavbar">
+                    <ul class="navbar-nav mb-0 fs-4 ps-0">
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="filmezz.html">Fedezd fel</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="">Filmek</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="">TV műsorok</a></li>
+                        <li class="py-2 py-lg-0"><a href="">Könyvtáram</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid main-container">
+            <aside class="szuro text-white rounded-4 mb-5">
+                <form>
+                    <div class="mobilFlex">
+                        <div class="mufajok pb-3">
+                            <p class="text-start fs-3 ps-3 pt-3">Műfaj</p>
+                            <ul>
+                                <div class="mobilBal">
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="akcio"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Akció
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="drama"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Dráma
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="komedia"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Komédia
+                                            </label>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="sci-fi"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Sci-fi
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="thriller"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Thriller
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="pb-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="horror"
+                                                id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Horror
+                                            </label>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="statusz pb-2">
+                            <p class="text-start fs-3 ps-3 pt-3">Státusz</p>
+                            <ul>
+                                <li class="pb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="elkezdett"
+                                            id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Elkezdett
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="pb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="megnezendo"
+                                            id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Megnézendő
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="pb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="befejezett"
+                                            id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Befejezett
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+            <section class="filmek">
+                <div class="sor d-flex pb-4">
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                </div>
+                <div class="sor d-flex pb-4">
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                </div>
+                <div class="sor d-flex pb-4">
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                    <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                        <img class="rounded-top-5 p-1" src="img/lastofus.jpg" alt="">
+                        <p class="ps-2 pt-2 m-0 fs-3">The Last Of Us</p>
+                        <p class="ps-2 text-secondary">Sci-fi, Kalandos</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="text-white">
+        <section class="mt-4">
+            <div class="d-flex justify-content-evenly pt-5">
+                <div>
+                    <ul>
+                        <li><a href="">Adatvédelem</a></li>
+                        <li><a href="">ASZF</a></li>
+                        <li><a href="">Szerződési jog</a></li>
+                        <li><a href="">GYIK</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Elállás</a></li>
+                        <li><a href="">Ügyfélszolgálat</a></li>
+                        <li><a href="">Jogi garancia</a></li>
+                        <li><a href="">Fiók</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="bi bi-instagram"></i><a target="_blank" class="ps-2"
+                                href="https://www.instagram.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-facebook"></i><a target="_blank" class="ps-2"
+                                href="https://www.facebook.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-tiktok"></i><a target="_blank" class="ps-2"
+                                href="https://www.tiktok.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-twitter-x"></i><a target="_blank" class="ps-2"
+                                href="https://x.com/?lang=hu">@Filmezz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center m-0 py-4">Rácz Gergő & Maszlavér Bence &copy; Minden jog fenntartva!</p>
+        </section>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/filmezz.js"></script>
+</body>
+
+</html>

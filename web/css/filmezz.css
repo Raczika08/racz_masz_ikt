@@ -1,0 +1,150 @@
+body{
+    background-color: #1E2A37;
+}
+nav, footer, .card, aside{
+    background-color: #343C67;
+}
+nav li{
+    display: inline-block;
+}
+nav li, footer li, aside li{
+    list-style-type: none;
+}
+nav a, nav li, footer a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover, footer a:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+.card{
+    border-color: #343C67;
+}
+.zoom-in {
+    background: linear-gradient(145deg, #2a2a2a, #383838);
+    border: 2px solid #343C67;
+}
+.zoom-in:hover {
+    transform: scale(1.02);
+}
+aside .mufajok{
+    border-bottom: 1px solid #ffffff4b;
+}
+aside{
+    width: 30%;
+    height: fit-content;
+    margin-right: 20px;
+    background-color: #3e4886;
+}
+.filmek{
+    width: 70%;
+}
+.container-fluid.main-container{
+    display: flex;
+}
+header{
+    position: fixed !important;
+    z-index: 100;
+    width: 100%;
+}
+main{
+    padding-top: 140px;
+}
+
+@media (min-width: 1025px) {
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start !important;
+        align-items: center;
+    }
+    .brand-container {
+        order: 1;
+        margin-right: 3rem;
+    }
+    .navbar-collapse {
+        order: 2;
+        display: flex !important;
+        flex-basis: auto;
+        width: auto !important;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+    .navbar-nav li {
+        display: inline-block !important;
+    }
+    .profile-container {
+        order: 3;
+        margin-left: auto; 
+    }
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-container {
+        order: 1;
+    }
+    .profile-container {
+        order: 2;
+    }
+    .navbar-toggler {
+        display: block !important;
+    }
+    .navbar-collapse {
+        order: 3;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    nav li {
+        display: block;
+        padding: 5px 0;
+    }
+    footer ul, .mufajok ul{
+        padding: 0px;
+    }
+    aside{
+        margin: 0px;
+        width: 100%;
+        margin: auto;
+    }
+    .mobilFlex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    aside .mufajok{
+        border-bottom: none;
+    }
+    .mufajok ul{
+        display: flex;
+    }
+    .mufajok p, .statusz p{
+        text-align: center !important;
+        padding-left: 0px !important;
+    }
+    .mobilBal{
+        padding-right: 15px;
+    }
+    .container-fluid.main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .filmek{
+        width: 100%;
+    }
+}

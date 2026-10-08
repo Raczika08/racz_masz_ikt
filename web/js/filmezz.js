@@ -1,0 +1,1 @@
+document.querySelector(".neve").innerHTML = localStorage.getItem("felhasznalonev")
