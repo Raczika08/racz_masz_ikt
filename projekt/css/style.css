@@ -27,4 +27,7 @@ footer a:hover{
     .container{
         width: 100% !important;
     }
+    footer ul{
+        padding: 0px;
+    }
 }
