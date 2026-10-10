@@ -52,6 +52,19 @@ main{
     padding-top: 140px;
 }
 
+.kartya-2 { 
+    width: calc(100% / 2 - 1rem); 
+}
+.kartya-3 { 
+    width: calc(100% / 3 - 1rem); 
+}
+.kartya-4 { 
+    width: calc(100% / 4 - 1rem); 
+}
+.kartya-5 { 
+    width: calc(100% / 5 - 1rem); 
+}
+
 @media (min-width: 1025px) {
     .navbar .container-fluid {
         display: flex;

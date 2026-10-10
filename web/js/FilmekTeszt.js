@@ -1,0 +1,3 @@
+var film = new Filmek("A remény rabjai", "FILM", "142 perc", "Dráma", 9.3, "BEFEJEZETT", "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg", "A remény rabjai – plakát", "Két fogoly barátsága a Shawshank-börtön falai között");
+
+console.assert(film.toString() === "A remény rabjai, FILM, 142 perc, Dráma, 9.3, BEFEJEZETT, https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg, A remény rabjai – plakát, Két fogoly barátsága a Shawshank-börtön falai között", "Hiba a construktor adatbeállító metódisaiban.")

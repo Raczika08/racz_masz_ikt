@@ -76,4 +76,8 @@ class Filmek{
     getKepLeiras(){
         return this.#kepLeiras;
     }
+
+    toString() {
+        return  `${this.getNev()}, ${this.getKategoria()}, ${this.getHossz()}, ${this.getMufaj()}, ${this.getErtekeles()}, ${this.getStatusz()}, ${this.getKep()}, ${this.getKepCim()}, ${this.getKepLeiras()}`
+    }
 }
