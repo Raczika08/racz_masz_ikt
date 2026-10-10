@@ -63,3 +63,27 @@ var filmek = [
   filmek41, filmek42, filmek43, filmek44, filmek45,
   filmek46, filmek47, filmek48, filmek49, filmek50
 ];
+
+function kiiratas() {
+    var filmKartyak = document.querySelector(".filmKartyak");
+    filmKartyak.innerHTML = "";
+
+    for (let i = 0; i < filmek.length; i++) {
+        if (i % 5 === 0) {
+            filmKartyak.innerHTML += `<div class="sor"></div>`;
+
+            var sorok = document.querySelectorAll(".sor");
+            sorok[sorok.length - 1].classList.add("d-flex", "pe-5", "pb-4");
+        }
+
+        var sorok = document.querySelectorAll(".sor");
+        sorok[sorok.length - 1].innerHTML += `
+            <div class="card zoom-in text-white rounded-5 w-25 mx-2 p-0">
+                <img class="rounded-top-5 p-1" src="${filmek[i].getKep()}" alt="${filmek[i].getKepLeiras()}" title="${filmek[i].getKepCim()}">
+                <p class="ps-2 pt-2 m-0 fs-3">${filmek[i].getNev()}</p>
+                <p class="ps-2 text-secondary">${filmek[i].getMufaj()}</p>
+            </div>
+        `;
+    }
+}
+kiiratas();
