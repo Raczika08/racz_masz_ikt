@@ -1,0 +1,52 @@
+body{
+    background-color: #1E2A37;
+}
+nav, footer{
+    background-color: #343C67;
+}
+nav li{
+    display: inline-block;
+}
+nav li, footer li{
+    list-style-type: none;
+}
+nav a, nav li, footer a, main a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover, footer a:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start !important;
+        align-items: center;
+    }
+    .brand-container {
+        order: 1;
+        margin-right: 3rem;
+    }
+    .navbar-collapse {
+        order: 2;
+        display: flex !important;
+        flex-basis: auto;
+        width: auto !important;
+    }
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+    .navbar-nav li {
+        display: inline-block !important;
+    }
+    .profile-container {
+        order: 3;
+        margin-left: auto; 
+    }
+    .navbar-toggler {
+        display: none !important;
+    }
+}
