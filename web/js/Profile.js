@@ -20,7 +20,6 @@ class Profile{
     getJelszo(){
         return this.#jelszo
     }
-
     toString(){
         return `${this.getFelhasznalonev()}, ${this.getJelszo()}`
     }

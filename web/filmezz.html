@@ -21,7 +21,8 @@
                 </div>
                 <div class="d-flex align-items-center profile-container">
                     <div class="d-flex align-items-center me-3">
-                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span class="neve ps-2"></span></a>
+                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span
+                                class="neve ps-2"></span></a>
                     </div>
                     <button class="navbar-toggler text-white border-0 fs-1 p-0 shadow-none" type="button"
                         data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
@@ -34,17 +35,15 @@
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="filmezz.html">Fedezd fel</a></li>
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="filmek.html">Filmek</a></li>
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="tvmusor.html">TV műsorok</a></li>
-                        <li class="py-2 py-lg-0"><a href="">Könyvtáram</a></li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
     <main>
         <div class="container-fluid main-container">
             <aside class="szuro text-white rounded-4 mb-5">
-                <form>
+                <form id="szuroForm">
                     <div class="mobilFlex">
                         <div class="mufajok pb-3">
                             <p class="text-start fs-3 ps-3 pt-3">Műfaj</p>
@@ -53,17 +52,15 @@
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="akcio"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                                Akció
-                                            </label>
+                                                id="mufaj-akcio">
+                                            <label class="form-check-label" for="mufaj-akcio">Akció</label>
                                         </div>
                                     </li>
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="drama"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                                id="mufaj-drama">
+                                            <label class="form-check-label" for="mufaj-drama">
                                                 Dráma
                                             </label>
                                         </div>
@@ -71,8 +68,8 @@
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="komedia"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                                id="mufaj-komedia">
+                                            <label class="form-check-label" for="mufaj-komedia">
                                                 Komédia
                                             </label>
                                         </div>
@@ -82,8 +79,8 @@
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="sci-fi"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                                id="mufaj-sci-fi">
+                                            <label class="form-check-label" for="mufaj-sci-fi">
                                                 Sci-fi
                                             </label>
                                         </div>
@@ -91,8 +88,8 @@
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="thriller"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                                id="mufaj-thriller">
+                                            <label class="form-check-label" for="mufaj-thriller">
                                                 Thriller
                                             </label>
                                         </div>
@@ -100,8 +97,8 @@
                                     <li class="pb-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="horror"
-                                                id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                                id="mufaj-horror">
+                                            <label class="form-check-label" for="mufaj-horror">
                                                 Horror
                                             </label>
                                         </div>
@@ -115,8 +112,8 @@
                                 <li class="pb-1">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="elkezdett"
-                                            id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
+                                            id="statusz-elkezdett">
+                                        <label class="form-check-label" for="statusz-elkezdett">
                                             Elkezdett
                                         </label>
                                     </div>
@@ -124,8 +121,8 @@
                                 <li class="pb-1">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="megnezendo"
-                                            id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
+                                            id="statusz-megnezendo">
+                                        <label class="form-check-label" for="statusz-megnezendo">
                                             Megnézendő
                                         </label>
                                     </div>
@@ -133,8 +130,8 @@
                                 <li class="pb-1">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="befejezett"
-                                            id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
+                                            id="statusz-befejezett">
+                                        <label class="form-check-label" for="statusz-befejezett">
                                             Befejezett
                                         </label>
                                     </div>
@@ -146,7 +143,6 @@
             </aside>
             <section class="filmek">
                 <div class="filmKartyak pb-4">
-
                 </div>
             </section>
         </div>

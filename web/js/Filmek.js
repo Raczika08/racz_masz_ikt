@@ -86,6 +86,6 @@ class Filmek{
     }
 
     toString() {
-        return  `${this.getNev()}, ${this.getKategoria()}, ${this.getHossz()}, ${this.getMufaj()}, ${this.getErtekeles()}, ${this.getStatusz()}, ${this.getKep()}, ${this.getKepCim()}, ${this.getKepLeiras()}`
+        return  `${this.getNev()}, ${this.getKategoria()}, ${this.getHossz()}, ${this.getMufaj()}, ${this.getErtekeles()}, ${this.getStatusz()}, ${this.getKep()}, ${this.getKepCim()}, ${this.getKepLeiras()}, ${this.getFilmLeiras()}`
     }
 }
