@@ -9,8 +9,9 @@ class Filmek{
     #kepCim;
     #kepLeiras;
     #filmLeiras;
+    #filmEvszam;
 
-    constructor(nev, kategoria, hossz, mufaj, ertekeles, statusz, kep, kepCim, kepLerias, filmLeiras){
+    constructor(nev, kategoria, hossz, mufaj, ertekeles, statusz, kep, kepCim, kepLerias, filmLeiras, filmEvszam){
         this.setNev(nev);
         this.setKategoria(kategoria);
         this.setHossz(hossz);
@@ -21,6 +22,7 @@ class Filmek{
         this.setKepCim(kepCim);
         this.setKepLeiras(kepLerias);
         this.setFilmLeiras(filmLeiras);
+        this.setFilmEvszam(filmEvszam);
     }
 
     setNev(nev){
@@ -53,6 +55,9 @@ class Filmek{
     setFilmLeiras(filmLeiras){
         this.#filmLeiras = filmLeiras;
     }
+    setFilmEvszam(filmEvszam){
+        this.#filmEvszam = filmEvszam;
+    }
 
     getNev(){
         return this.#nev;
@@ -83,6 +88,9 @@ class Filmek{
     }
     getFilmLeiras(){
         return this.#filmLeiras;
+    }
+    getFilmEvszam(){
+        return this.#filmEvszam;
     }
 
     toString() {
