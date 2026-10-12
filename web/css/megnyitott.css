@@ -12,13 +12,18 @@ nav li, footer li{
 }
 nav a, nav li, footer a, main a{
     text-decoration: none;
+}
+nav a, nav li, footer a, main a, form{
     color: #fff;
 }
 nav a:hover, footer a:hover{
     color: #ccc;
     cursor: pointer;
 }
-
+form{
+    background-color: rgba(239, 239, 239, 0.4);
+    border-radius: 20px;
+}
 @media (min-width: 1025px) {
     .navbar .container-fluid {
         display: flex;
@@ -48,5 +53,19 @@ nav a:hover, footer a:hover{
     }
     .navbar-toggler {
         display: none !important;
+    }
+}
+@media (max-width: 1024px){
+    main .col-lg-6 p, main .col-lg-6{
+        text-align: center !important;
+    }
+    main .col-lg-6 .adatok{
+        justify-content: space-evenly !important;
+    }
+    .filmLeiras{
+        width: 100% !important;
+    }
+    footer ul{
+        padding-left: 0px;
     }
 }

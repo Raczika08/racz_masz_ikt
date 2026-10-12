@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmezz - Új film</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ujFilm.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-custom text-white py-3">
+            <div class="container-fluid align-items-center">
+                <div class="d-flex align-items-center brand-container">
+                    <i class="bi bi-camera-reels-fill ps-2 ps-lg-4 pe-2 fs-1 logo"></i>
+                    <a href="filmezz.html" class="fs-1 pe-3">Filmezz</a>
+                </div>
+                <div class="d-flex align-items-center profile-container">
+                    <div class="d-flex align-items-center me-3">
+                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span
+                                class="neve ps-2"></span></a>
+                    </div>
+                    <button class="navbar-toggler text-white border-0 fs-1 p-0 shadow-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                        aria-expanded="false" aria-label="Menü megnyitása">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse w-100" id="mainNavbar">
+                    <ul class="navbar-nav mb-0 fs-4 ps-0">
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="filmezz.html">Fedezd fel</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="filmek.html">Filmek</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="tvmusor.html">TV műsorok</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a class="active" href="ujFilm.html">Új film</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-4">
+            <div class="container">
+                <form class="mt-5 px-5 pt-5 pb-2">
+                    <h2 class="text-center mb-5">Új film hozzáadása</h2>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Cím</label>
+                        <input type="text" class="form-control cim">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Évszám</label>
+                        <input type="number" class="form-control evszam">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Kategória</label>
+                        <select class="form-select kategoria" aria-label="Default select example">
+                            <option value="FILM">Film</option>
+                            <option value="SOROZAT">Sorozat</option>
+                            <option value="TV_MUSOR">TV Műsor</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Hossz</label>
+                        <input type="text" class="form-control hossz">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Műfaj</label>
+                        <select class="form-select mufaj" aria-label="Default select example">
+                            <option value="Dráma">Dráma</option>
+                            <option value="Komédia">Komédia</option>
+                            <option value="Sci-fi">Sci-fi</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Horror">Horror</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Értékelés</label>
+                        <input type="text" class="form-control ertekeles">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Kép (url)</label>
+                        <input type="url" class="form-control kepURL">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Film leírása</label>
+                        <textarea class="form-control leiras" rows="3"></textarea>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="button" class="btn btn-success fs-4" onclick="ujFilmMentes()">Mentés</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white">
+        <section class="mt-4">
+            <div class="d-flex justify-content-evenly pt-5">
+                <div>
+                    <ul>
+                        <li><a href="">Adatvédelem</a></li>
+                        <li><a href="">ASZF</a></li>
+                        <li><a href="">Szerződési jog</a></li>
+                        <li><a href="">GYIK</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Elállás</a></li>
+                        <li><a href="">Ügyfélszolgálat</a></li>
+                        <li><a href="">Jogi garancia</a></li>
+                        <li><a href="">Fiók</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="bi bi-instagram"></i><a target="_blank" class="ps-2"
+                                href="https://www.instagram.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-facebook"></i><a target="_blank" class="ps-2"
+                                href="https://www.facebook.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-tiktok"></i><a target="_blank" class="ps-2"
+                                href="https://www.tiktok.com/">@Filmezz</a></li>
+                        <li><i class="bi bi-twitter-x"></i><a target="_blank" class="ps-2"
+                                href="https://x.com/?lang=hu">@Filmezz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center m-0 py-4">Rácz Gergő & Maszlavér Bence &copy; Minden jog fenntartva!</p>
+        </section>
+    </footer>
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hibaüzenet!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Filmek.js"></script>
+    <script src="js/adatok.js"></script>
+    <script src="js/ujFilm.js"></script>
+</body>
+
+</html>

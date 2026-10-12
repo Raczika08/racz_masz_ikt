@@ -49,8 +49,10 @@ function kiiratas() {
             html += `<div class="sor d-flex pb-4">`;
         }
 
+        var eredetiIndex = filmek.indexOf(lista[i]);
+
         html += `
-            <div class="card kartya-${db} ${i} zoom-in text-white rounded-5 mx-2 p-0" onclick="megnyitas(${i})">
+            <div class="card kartya-${db} ${i} zoom-in text-white rounded-5 mx-2 p-0" onclick="megnyitas(${eredetiIndex})">
                 <img class="rounded-top-5 p-1" src="${lista[i].getKep()}" alt="${lista[i].getKepLeiras()}" title="${lista[i].getKepCim()}">
                 <p class="ps-2 pt-2 m-0 fs-3">${lista[i].getNev()}</p>
                 <p class="ps-2 text-secondary">${lista[i].getMufaj()}</p>
@@ -79,5 +81,5 @@ window.addEventListener("resize", function () {
 });
 
 function megnyitas(i) {
-    window.open("megnyitott.html?id=" + i, "_blank");
+    window.location.href = "megnyitott.html?id=" + i;
 };

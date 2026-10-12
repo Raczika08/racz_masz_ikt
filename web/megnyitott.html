@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Filmezz - megnyitott műsor</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/megnyitott.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-custom text-white py-3">
@@ -19,7 +21,8 @@
                 </div>
                 <div class="d-flex align-items-center profile-container">
                     <div class="d-flex align-items-center me-3">
-                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span class="neve ps-2"></span></a>
+                        <a href="index.html" class="profilkep pe-2 mb-0 fs-3"><i class="bi bi-person-circle"></i><span
+                                class="neve ps-2"></span></a>
                     </div>
                     <button class="navbar-toggler text-white border-0 fs-1 p-0 shadow-none" type="button"
                         data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
@@ -32,6 +35,7 @@
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="filmezz.html">Fedezd fel</a></li>
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="filmek.html">Filmek</a></li>
                         <li class="pe-lg-5 py-2 py-lg-0"><a href="tvmusor.html">TV műsorok</a></li>
+                        <li class="pe-lg-5 py-2 py-lg-0"><a href="ujFilm.html">Új film</a></li>
                     </ul>
                 </div>
 
@@ -43,20 +47,39 @@
         <section class="megjelenites text-white mt-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 text-end kep pe-3 border-end border-secondary">
-                        
+                    <div class="col-lg-6 text-end kep pe-3">
+
                     </div>
                     <div class="col-lg-6">
                         <p class="filmCim fs-1 text-start pt-5"></p>
                         <p class="filmMufaj text-start text-secondary"></p>
-                        <div class="d-flex">
-                        <p class="filmHossz text-start text-secondary"></p>
-                        <p class="filmErtekeles text-start text-secondary ps-3"></p>
+                        <div class="d-flex adatok">
+                            <p class="filmHossz text-start text-secondary"></p>
+                            <p class="filmErtekeles text-start text-secondary ps-3"></p>
+                            <p class="filmEvszam text-start text-secondary ps-3"></p>
                         </div>
                         <p class="filmLeiras text-start fs-4 w-75"></p>
-                        <button type="button" class="btn btn-primary mt-5"><a target="_blank" href="https://www.youtube.com/watch?v=sppNnsF0gUk">Megtekintés</a></button>
+                        <button type="button" class="btn btn-primary mt-5 megnez" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"><a target="_blank"
+                                href="https://www.youtube.com/watch?v=sppNnsF0gUk">Megtekintés</a></button>
+                        <button type="button" class="btn btn-info mt-5" onclick="formMegnyitas()">Szerkesztés</button>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form class="szerkesztes d-none mt-5 px-5 pt-5 pb-2">
+                    <h2 class="text-center mb-5 text-white rounded-5 p-2 fs-3 rosszAdatok"></h2>
+                    <h2 class="text-center mb-5">Szerkesztés</h2>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-3 fs-3">Értékelés</label>
+                        <input type="text" class="form-control ertekeles">
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="button" class="btn btn-success mt-5" onclick="save()">Mentés</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -96,11 +119,42 @@
             <p class="text-center m-0 py-4">Rácz Gergő & Maszlavér Bence &copy; Minden jog fenntartva!</p>
         </section>
     </footer>
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hibaüzenet!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Meddig nézted a filmet/sorozatot?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick="elkezdett()">Egy részét</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="befejezett()">Végig</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/Filmek.js"></script>
     <script src="js/adatok.js"></script>
     <script src="js/megnyitott.js"></script>
 </body>
+
 </html>

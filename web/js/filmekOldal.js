@@ -95,5 +95,5 @@ window.addEventListener("resize", function () {
 });
  
 function megnyitas(i) {
-    window.open("megnyitott.html?id=" + i, "_blank");
+    window.location.href = "megnyitott.html?id=" + i;
 };

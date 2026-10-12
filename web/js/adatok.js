@@ -45,7 +45,7 @@ var filmek44 = new Filmek("Fargo", "SOROZAT", "5 évad", "Thriller", 8.9, "MEGNE
 var filmek45 = new Filmek("The Boys", "SOROZAT", "5 évad", "Akció", 8.7, "ELKEZDETT", "https://m.media-amazon.com/images/M/MV5BZjU4OWNiYzQtMzc1NS00NjZlLTgyYTctZWY4ZmEzMTkxYjA4XkEyXkFqcGc@._V1_.jpg", "The Boys – plakát", "Egy csapat szembeszáll a korrupt szuperhősökkel", "Egy csapat hétköznapi ember szembeszáll a korrupt, hatalommal visszaélő szuperhősökkel és az őket irányító Vought nagyvállalattal. Billy Butcher és társai nem finomkodnak. Eric Kripke sorozata brutális, szarkasztikus és vérfagyasztóan szórakoztató szatíra a hírnévről, a hatalomról és a szuperhős-műfaj túlzásairól, Antony Starr emlékezetes Homelanderével, aki egyszerre félelmetes és groteszk. Vad élmény.", 2019);
 var filmek46 = new Filmek("Top Gear", "TV_MUSOR", "33 évad", "Komédia", 8.7, "MEGNEZENDO", "https://m.media-amazon.com/images/S/pv-target-images/8850766e1bda0df4044b457037e00859cfdab4fe63c551bca24f427406f03761._UR2000,3000_CLs%7C2000,3000%7C/G/bundle/BottomRightCardGradient2x3.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,2000,3000+0,0,2000,3000+1670,2769,243,144_kvf21cb47db8d34aa971cd86f57a65cf8d_SX750_FMpng_.png", "Top Gear – plakát", "Autós tesztek és őrült kihívások humorral fűszerezve", "A brit autós magazinműsor Jeremy Clarkson, Richard Hammond és James May vezetésével egyszerre szól az autórajongóknak és mindenkinek, aki szereti a humort. Szuperautók tesztjei, őrült kihívások, versenyek és hosszú utazások váltakoznak tréfás vitákkal. A csapat kémiája, a látványos felvételek és a szarkasztikus kommentárok tették a műsort világszerte népszerűvé. Igazi szórakozás.", 2002);
 var filmek47 = new Filmek("Jóbarátok", "TV_MUSOR", "10 évad", "Komédia", 8.9, "BEFEJEZETT", "https://media.posterstore.com/site_images/68631cf30b074212f55c844b_472608644_WB0074-8.jpg?auto=compress%2Cformat&fit=max&w=3840", "Jóbarátok – plakát", "Hat barát élete New Yorkban", "Rachel, Monica, Phoebe, Joey, Chandler és Ross hat jó barát New Yorkban, akik szeretnek, veszekednek és mindenben egymás mellett állnak. Az 1994-től 2004-ig futó sorozat humora, ikonikus párbeszédei és melegsége generációkat szórakoztat. Szerelmek, munkahelyi kudarcok és barátság váltakoznak, miközben a szereplők felnőnek, a nézők pedig szívükbe zárják őket. Időtlen vígjáték.", 1994);
-var filmek48 = new Filmek("A Simpson család", "TV_MUSOR", "36 évad", "Komédia", 8.7, "ELKEZDETT", "https://static.wikia.nocookie.net/szinkronpedia/images/f/f5/A_Simpson_csal%C3%A1d.jpg/revision/latest?cb=20240709154341&path-prefix=hu", "A Simpson család – plakát", "Egy átlagos amerikai család animációs kalandjai Springfieldben", "Homer, Marge, Bart, Lisa és Maggie, a sárga bőrű springfieldi család mindennapjait követő animációs sorozat 1989 óta szórakoztat. Szatirikus humorával kifigurázza az amerikai társadalmat, a politikát, a médiát és a hétköznapi élet furcsaságait. Matt Groening alkotása hosszú évtizedek alatt a legtovább futó amerikai animációs sorozat lett, számtalan ikonikus mellékszereplővel tarkítva.", 1989);
+var filmek48 = new Filmek("A Simpson család", "TV_MUSOR", "36 évad", "Komédia", 8.7, "ELKEZDETT", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5rzn1kjPdXb8I9MJ8yNlhjlC54Tp59wMRemc9CwEg2w&s=10", "A Simpson család – plakát", "Egy átlagos amerikai család animációs kalandjai Springfieldben", "Homer, Marge, Bart, Lisa és Maggie, a sárga bőrű springfieldi család mindennapjait követő animációs sorozat 1989 óta szórakoztat. Szatirikus humorával kifigurázza az amerikai társadalmat, a politikát, a médiát és a hétköznapi élet furcsaságait. Matt Groening alkotása hosszú évtizedek alatt a legtovább futó amerikai animációs sorozat lett, számtalan ikonikus mellékszereplővel tarkítva.", 1989);
 var filmek49 = new Filmek("Hivatali patkányok (The Office US)", "TV_MUSOR", "9 évad", "Komédia", 9.0, "BEFEJEZETT", "https://marvin.bline.hu/product_images/477/F9767.JPG", "Hivatali patkányok – plakát", "Egy papírcég irodai mindennapjai dokumentarista stílusban", "A Dunder Mifflin papírcég scrantoni irodájában dokumentarista stílusban követjük a dolgozók mindennapjait, élükön a tapintatlan, mégis jószívű Michael Scott területi menedzserrel. Steve Carell, Rainn Wilson és John Krasinski vezette szereplőgárda hétköznapi helyzeteket változtat kínosan vicces, szívmelengető pillanatokká. A sorozat kultikus, rengeteg idézhető jelenettel és kiemelkedően népszerű szatírával az irodai életről.", 2005);
 var filmek50 = new Filmek("Planet Earth II", "TV_MUSOR", "6 rész", "Dráma", 9.5, "BEFEJEZETT", "https://m.media-amazon.com/images/M/MV5BMzY4NDBkMWYtYzdkYy00YzBjLWJmODctMWM4YjYzZTdjNWE5XkEyXkFqcGc@._V1_.jpg", "Planet Earth II – plakát", "A Föld vadvilága lélegzetelállító felvételeken", "A BBC természetfilmes sorozata David Attenborough elbeszélésével a Föld legkülönbözőbb élőhelyeit mutatja be: szigeteket, hegyeket, dzsungeleket, sivatagokat, gyepeket és városokat. A lélegzetelállító ultra HD felvételek ritka állati pillanatokat örökítenek meg, például a kígyók és leguánok híres hajszáját. Hans Zimmer zenéje még látványosabbá és megindítóbbá teszi a vadvilág szépségét és veszélyeit.", 2016);
 var filmek = [
@@ -60,3 +60,44 @@ var filmek = [
   filmek41, filmek42, filmek43, filmek44, filmek45,
   filmek46, filmek47, filmek48, filmek49, filmek50
 ];
+
+function mentes() {
+    var allapot = filmek.map(f => ({
+        ertekeles: f.getErtekeles(),
+        statusz: f.getStatusz()
+    }));
+    localStorage.setItem("filmekAllapot", JSON.stringify(allapot));
+}
+
+function betoltes() {
+    var mentett = localStorage.getItem("filmekAllapot");
+    if (!mentett) return;
+
+    JSON.parse(mentett).forEach((adat, idx) => {
+        if (filmek[idx]) {
+            filmek[idx].setErtekeles(adat.ertekeles);
+            filmek[idx].setStatusz(adat.statusz);
+        }
+    });
+}
+// function visszaallitas() {
+//     localStorage.removeItem("filmekAllapot");
+//     localStorage.removeItem("ujFilmek")
+//     location.reload();
+// }
+function ujFilmekBetoltese() {
+    var mentett = localStorage.getItem("ujFilmek");
+    if (!mentett) return;
+ 
+    try {
+        JSON.parse(mentett).forEach(adat => {
+            filmek.push(new Filmek(adat.nev, adat.kategoria, adat.hossz, adat.mufaj, adat.ertekeles,
+                adat.statusz, adat.kep, adat.kepCim, adat.kepLeiras, adat.filmLeiras, adat.evszam));
+        });
+    } catch (e) {
+        console.error("Az újonnan felvett filmek betöltése nem sikerült:", e);
+    }
+}
+ 
+ujFilmekBetoltese();
+betoltes();

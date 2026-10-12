@@ -51,9 +51,6 @@ header{
 main{
     padding-top: 140px;
 }
-.active{
-    box-shadow: 0 6px 10px -8px #fff;
-}
 
 .kartya-2 { 
     width: calc(100% / 2 - 1rem); 
@@ -67,7 +64,9 @@ main{
 .kartya-5 { 
     width: calc(100% / 5 - 1rem); 
 }
-
+.active{
+    box-shadow: 0 6px 10px -8px #fff;
+}
 @media (min-width: 1025px) {
     .navbar .container-fluid {
         display: flex;
