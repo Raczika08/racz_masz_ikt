@@ -51,6 +51,9 @@ header{
 main{
     padding-top: 140px;
 }
+.active{
+    box-shadow: 0 6px 10px -8px #fff;
+}
 
 .kartya-2 { 
     width: calc(100% / 2 - 1rem); 
